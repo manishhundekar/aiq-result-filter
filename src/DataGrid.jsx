@@ -5,10 +5,10 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
+// import InputLabel from '@mui/material/InputLabel';
+// import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+// import Select from '@mui/material/Select';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
@@ -111,6 +111,7 @@ export default function DataTable() {
             updateAllotedCategoryOptions(tempAllotedCategoryOptions);
             updateCandidateCategoryOptions(tempCandidateCategoryOptions);
             updateRemarksOptions(tempRemarksOptions);
+            return;
         }));
         setLoading(false)
         return;
