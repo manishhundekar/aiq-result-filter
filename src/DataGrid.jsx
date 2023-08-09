@@ -111,7 +111,7 @@ export default function DataTable() {
             updateAllotedCategoryOptions(tempAllotedCategoryOptions);
             updateCandidateCategoryOptions(tempCandidateCategoryOptions);
             updateRemarksOptions(tempRemarksOptions);
-            return;
+            return 0;
         }));
         setLoading(false)
         return;
