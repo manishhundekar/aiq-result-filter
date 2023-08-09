@@ -13,6 +13,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Button from '@mui/material/Button'
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -213,29 +214,29 @@ export default function DataTable() {
                                 options={remarksOptions} />
                         </Item>
                     </Grid>
+                    <Grid item xs={12}>
+                        <Item>
+                            <Button variant="outlined" onClick={()=>{updateRows();}}>UPDATE TABLE</Button>
+                        </Item>
+                    </Grid>
                     <Grid item lg={12}>
                         <Item>
-                            {
-                                !loading ?
-
-                                    <DataGrid
-                                        loading={loading}
-                                        rows={tableRows}
-                                        columns={columns}
-                                        initialState={{
-                                            pagination: {
-                                                paginationModel: { page: 0, pageSize: 100 },
-                                            },
-                                        }}
-                                        pageSizeOptions={[50, 100]}
-                                        disableColumnFilter
-                                    /> : ''
-                            }
+                            <DataGrid
+                                loading={loading}
+                                rows={tableRows}
+                                columns={columns}
+                                initialState={{
+                                    pagination: {
+                                        paginationModel: { page: 0, pageSize: 100 },
+                                    },
+                                }}
+                                pageSizeOptions={[50, 100]}
+                                disableColumnFilter
+                            />
                         </Item>
                     </Grid>
                 </Grid>
             </Box>
-
         </div>
     );
 }
