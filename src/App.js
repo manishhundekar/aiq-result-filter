@@ -51,9 +51,9 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <h1 style={{textAlign : 'center'}}>NEET-PG Counselling Seats Allotment -2023 Round 1 | Result Filter Application</h1>
+      <h1 style={{textAlign : 'center'}}>NEET-PG Counselling Seats Allotment -2023 Round 2 | Result Filter Application</h1>
         <DataGridDemo />
-      <h6 style={{textAlign : 'center'}}>Managed by Sandeep and Manish, The Application is meant for fair use only. For Feedback/comments mail us at redsoiltechnologies7@gmail.com </h6>
+      <h6 style={{textAlign : 'center'}}>Managed by Vaibhav, Sandeep and Manish, The Application is meant for fair use only. For Feedback/comments mail us at redsoiltechnologies7@gmail.com </h6>
       <h6 style={{textAlign : 'center'}}>Visit Counter: {count}</h6>
     </div>
   );

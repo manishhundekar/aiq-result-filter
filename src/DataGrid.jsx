@@ -1,5 +1,5 @@
 import * as React from 'react';
-import rows from './data.json';
+import rows from './dataround2.json';
 import { DataGrid } from '@mui/x-data-grid';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
